@@ -66,3 +66,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #008080; /* ...su sfondo foglia di té */
   }
 }
+
+/* regole per desktop computers (width tra 1101 e 1300 px */
+@media all and (min-width: 1101px) and (max-width: 1300px) and (orientation: portrait) { /* orientamento verticale */
+  body {
+    color: #000; /* testo nero... */
+    background-color: #0f0; /* ...su sfondo verde */
+  }
+}
+
+@media all and (min-width: 1101px) and (max-width: 1300px) and (orientation: landscape) { /* orientamento orizzontale */
+  body {
+    color: #fff; /* testo bianco... */
+    background-color: #a020f0; /* ...su sfondo viola */
+  }
+}
