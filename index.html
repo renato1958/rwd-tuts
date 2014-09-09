@@ -2,7 +2,7 @@
 <html lang="it" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Tutorial 1: senza stile</title>
+    <title>Tutorial 3: responsive colors</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -32,20 +32,17 @@
       
       <div id="main-content" role="main">
         <article class="left">
-          <h3 class="article-title">Tutorial 2</h3>
+          <h3 class="article-title">Tutorial 3</h3>
           <h4 class="article-author">By Renato Felisi</h4>
           <img src="img/renato.png" class="medallion" alt="Felisi Renato">
-          <p>Benvenuti al <span class="enhanced">Tutorial 2</span>!</p>
-          <p>Abbiamo aggiunto, nella sezione &lt;head&gt;, il seguente tag:</p>
-
-          <pre>&lt;meta name=&ldquo;viewport&rdquo;</pre>
-          <pre>content=&ldquo;width=device-width,</pre>
-          <pre>initial-scale=1&rdquo;&gt;</pre>
-
-          <p>Qual &egrave; il risultato? Se visualizzate la pagina su un desktop, nulla apparir&agrave; mutato. Ma guardate il risultato con un dispositivo mobile, soprattutto con uno smartphone: &egrave; stupefacente!</p>
-          <p>Ora il testo &egrave; perfettamente leggibile e si può usare la navigazione senza fatica. Ovvero, l&rsquo;<strong>accessibilit&agrave;</strong> &egrave; garantita, e anche l&rsquo;<strong>usabilit&agrave;</strong> &egrave; migliorata, anche se resta ancora parecchio lavoro da fare.</p>
-          <p>Il prossimo tutorial fornir&agrave; un piccolo assaggio di comportamento responsive.</p>
-          <p>Una discussione su accessibilit&agrave; e usabilit&agrave; si pu&ograve; trovare in <a href="http://www.digital-web.com/articles/accessibility_and_usability">questo articolo</a> del bravo Peter Paul Koch.</p>
+          <p>Benvenuti al <strong>Tutorial 3</strong>!</p>
+          <p>In questo tutorial abbiamo realizzato uno scenario che ha puro valore didattico, in quanto non si vede praticamente mai su un sito live.</p>
+          <p>Lo scopo &egrave; mostrare l&rsquo;azione delle <i>media queries</i>: in sostanza, si interroga la finestra del browser in merito a diverse caratteristiche: la larghezza, l&rsquo;altezza, il rapporto tra i lati, l&rsquo;orientamento (verticale od orizzontale) e molte altre caratteristiche ancora; oltre a ci&ograve;, le queries possono essere concatenate mediante operatori per accedere a pi&ugrave; caratteristiche.</p>
+          <p>Guardiamo ora la pagina da diversi dispositivi: il PC/Mac, lo smartphone, il tablet, ma anche la X-Box, la Wii, il Kindle e, tra poco tempo, dispositivi non convenzionali come i Google glasses. Cosa vediamo?</p>
+          <p>Il CSS &egrave; strutturato in modo da variare due caratteristiche: il colore di sfondo e quello del testo scritto; si parte con un layout generico, adatto per dispositivi di 600 px di larghezza massima, nel range, quindi, degli smartphones. L&rsquo;unica media query interroga il dispositivo sul suo orientamento: in modalit&agrave; portrait (verticale) mostra un testo bianco su sfondo rosso, mentre in modalit&agrave; landscape (orizzontale) il testo &egrave; bianco su sfondo arancione. Le caratteristiche dei dispositivi possono essere simulate dal browser del computer desktop variando la larghezza e l&rsquo;altezza, cos&igrave; da simulare il tipo di dispositivo e il suo orientamento.</p>
+          <p>Il primo vero breakpoint viene realizzato da una media query che si attiva quando un dispositivo ha una larghezza minima maggiore di 600 px e fino a 1100 px (nel range dei tablet); in questo caso, in modalit&agrave; portrait, si ha un testo bianco su sfondo blu, mentre in modalit&agrave; landscape, si ammira lo stesso testo bianco su sfondo <i>teal</i> (foglia di t&egrave;).</p>
+          <p>Ma andiamo avanti! I successivi breakpoint si attiveranno verosimilmente solo su dispositivi fissi. Tra i 1101 px e i 1300 px, in modalit&agrave; portrait, il testo &egrave; nero su sfondo verde, mentre in modalit&agrave; landscape, il testo &egrave; bianco su sfondo violetto. Oltre tale limite, il testo appare nero su sfondo bianco in modalit&agrave; portrait e bianco su sfondo nero in modalit&agrave; landscape. Tale combinazione &egrave; difficile da ottenere, a meno di non possedere un computer con un monitor estremamente grande.</p>
+          <p>Il prossimo tutorial mostrer&agrave; una pagina in versione <i>old style</i>.</p>
         </article>
 
         <aside class="right">
