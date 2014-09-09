@@ -1,0 +1,39 @@
+﻿/* Regole di utilità generale */
+*, html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* Selettori generali */
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
