@@ -37,3 +37,25 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/* Le prime due regole sono di default */
+@media all and (orientation: portrait) { /* orientamento verticale */
+  body {
+    color: #fff; /* testo bianco... */
+    background-color: #f00; /* ...su sfondo rosso */
+  }
+}
+
+@media all and (orientation: landscape) { /* orientamento orizzontale */
+  body {
+    color: #fff; /* testo bianco... */
+    background-color: #ff8000; /* ...su sfondo arancione */
+  }
+}
+
+/* queste due regole valgono per i dispositivi nel range dei tablet (width tra 601 e 1100 px) */
+@media all and (min-width: 601px) and (max-width: 1100px) and (orientation: portrait) { /* orientamento verticale */
+  body {
+    color: #fff; /* testo bianco... */
+    background-color: #00f; /* ...su sfondo blu */
+  }
+}
