@@ -81,3 +81,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #a020f0; /* ...su sfondo viola */
   }
 }
+
+/* regole per monitor mooolto grandi*/
+@media all and (min-width: 1301px) and (orientation: portrait) { /* orientamento verticale */
+  body {
+    color: #000; /* testo nero... */
+    background-color: #fff; /* ...su sfondo bianco */
+  }
+}
+
+@media all and (min-width: 1301px) and (orientation: landscape) { /* orientamento orizzontale */
+  body {
+    color: #fff; /* testo bianco... */
+    background-color: #000; /* ...su sfondo nero */
+  }
+}
